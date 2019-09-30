@@ -11,7 +11,7 @@ module "diagnostics" {
     resource_id                       = var.resource_id
     diag_object                       = var.diag_object
     diagnostics_map                   = var.diagsmap
-    la_workspace_id                   = var.laworkspace.id
+    log_analytics_workspace_id        = var.laworkspaceid
 }
 ```
 
@@ -24,7 +24,7 @@ module "diagnostics" {
     resource_id                       = var.resource_id
     diag_object                       = var.diag_object
     diagnostics_map                   = var.diagsmap
-    la_workspace_id                   = var.laworkspace.id
+    log_analytics_workspace_id        = var.laworkspaceid
 }
 ```
 
@@ -56,20 +56,17 @@ Example
 resource_id = "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/uqvh-hub-operations/providers/Microsoft.RecoveryServices/vaults/asr-edo"
 ```
 
-## log_analytics_workspace
+## log_analytics_workspace_id
 (Required) contains the log analytics workspace details for operations diagnostics."
 
 ```hcl
-variable "log_analytics_workspace" {
+variable "log_analytics_workspace_id" {
   description = "(Required) contains the log analytics workspace details for operations diagnostics"
 }
 ```
 Example
 ```hcl
-  log_analytics_workspace = {
-        id = "/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/operations-rg/providers/microsoft.operationalinsights/workspaces/lalogs"
-        name = "lalogs"
-  }
+  log_analytics_workspace_id = "/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/operations-rg/providers/microsoft.operationalinsights/workspaces/lalogs"
 ```
 
 ## diagnostics_map

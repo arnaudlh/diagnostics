@@ -2,8 +2,8 @@ variable "diagnostics_map" {
   description = "(Required) contains the SA and EH details for operations diagnostics."
 }
 
-variable "log_analytics_workspace" {
-  description = "(Required) contains the log analytics workspace details for operations diagnostics."
+variable "log_analytics_workspace_id" {
+  description = "(Required) contains the log analytics workspace ID details for operations diagnostics."
 }
 
 variable "name" {
