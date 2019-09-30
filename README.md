@@ -8,7 +8,7 @@ module "diagnostics" {
     source                  = "git://github.com/aztfmod/diagnostics.git?ref=v0.1"
   
     name                              = var.name
-    resource_id                       = var.name
+    resource_id                       = var.resource_id
     diag_object                       = var.diag_object
     diagnostics_map                   = var.diagsmap
     la_workspace_id                   = var.laworkspace.id
@@ -21,7 +21,7 @@ module "diagnostics" {
     source                  = "git://github.com/aztfmod/diagnostics.git?ref=latest"
   
     name                              = var.name
-    resource_id                       = var.name
+    resource_id                       = var.resource_id
     diag_object                       = var.diag_object
     diagnostics_map                   = var.diagsmap
     la_workspace_id                   = var.laworkspace.id
@@ -91,5 +91,10 @@ Example
 
 
 # Output
+Outputs the created diagnostics object: 
+```hcl
+output "object" {
+  value = azurerm_monitor_diagnostic_setting.diagnostics
+}
 
 ```
