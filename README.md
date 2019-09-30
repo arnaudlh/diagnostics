@@ -90,11 +90,30 @@ Example
 
 
 
-# Output
+# Outputs
+##object
 Outputs the created diagnostics object: 
 ```hcl
 output "object" {
   value = azurerm_monitor_diagnostic_setting.diagnostics
+}
+
+```
+
+##name
+Outputs the name created diagnostics object: 
+```hcl
+output "name" {
+  value = azurerm_monitor_diagnostic_setting.diagnostics.name
+}
+
+```
+
+##id
+Outputs the created diagnostics object: 
+```hcl
+output "id" {
+  value = azurerm_monitor_diagnostic_setting.diagnostics.id
 }
 
 ```
