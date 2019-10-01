@@ -1,3 +1,4 @@
+[![Build status](https://dev.azure.com/azure-terraform/Blueprints/_apis/build/status/modules/diagnostics)](https://dev.azure.com/azure-terraform/Blueprints/_build/latest?definitionId=0)
 # Deploys diagnostics settings for an Azure resource
 Deploys the diagnostics settings for an already existing Azure resource
 
